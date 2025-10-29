@@ -1,0 +1,20 @@
+2025-10-24 13:32:37,767 | WARNING | matplotlib | /Users/vladimir/.matplotlib is not a writable directory
+2025-10-24 13:32:37,768 | WARNING | matplotlib | Matplotlib created a temporary cache directory at /var/folders/f0/nbbpk4gd29ncn7gqyc0fhy5h0000gn/T/matplotlib-0ciyk8ir because there was an issue with the default path (/Users/vladimir/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+2025-10-24 13:32:37.824 system_profiler[53365:1963456] XType: Using static font registry.
+2025-10-24 13:32:42,788 | WARNING | matplotlib.font_manager | Matplotlib is building the font cache; this may take a moment.
+2025-10-24 13:32:46,638 | INFO | matplotlib.font_manager | Failed to extract font properties from /System/Library/Fonts/Apple Color Emoji.ttc: Could not set the fontsize (invalid pixel size; error code 0x17)
+2025-10-24 13:32:46,645 | INFO | matplotlib.font_manager | Failed to extract font properties from /System/Library/Fonts/LastResort.otf: tuple indices must be integers or slices, not str
+2025-10-24 13:32:46,662 | INFO | matplotlib.font_manager | Failed to extract font properties from /System/Library/Fonts/Supplemental/NISC18030.ttf: Could not set the fontsize (invalid pixel size; error code 0x17)
+2025-10-24 13:32:46,718 | INFO | matplotlib.font_manager | generated new fontManager
+2025-10-24 13:32:47,152 | INFO | ct_cmb_validation | Reading map: data/raw/planck/COM_CMB_IQU-smica_2048_R3.00_full.fits
+/Users/vladimir/Downloads/ct-cmb-validation/scripts/02d_run_pt1_patch_scan.py:126: HealpyDeprecationWarning: "verbose" was deprecated in version 1.15.0 and will be removed in a future version. 
+  m = hp.read_map(map_path, field=0, dtype=float, verbose=False)
+2025-10-24 13:32:49,454 | INFO | ct_cmb_validation | Applying global mask: data/raw/masks/COM_Mask_CMB-common-Mask-Int_2048_R3.00 (1).fits
+/Users/vladimir/Downloads/ct-cmb-validation/scripts/02d_run_pt1_patch_scan.py:135: HealpyDeprecationWarning: "verbose" was deprecated in version 1.15.0 and will be removed in a future version. 
+  gmask = hp.read_map(mask_path, dtype=float, verbose=False)
+/Users/vladimir/Downloads/ct-cmb-validation/scripts/02d_run_pt1_patch_scan.py:177: HealpyDeprecationWarning: "verbose" was deprecated in version 1.15.0 and will be removed in a future version. 
+  mg = hp.synfast(cl, nside=nside, new=True, verbose=False)
+/Users/vladimir/Downloads/ct-cmb-validation/scripts/02d_run_pt1_patch_scan.py:68: HealpyDeprecationWarning: "verbose" was deprecated in version 1.15.0 and will be removed in a future version. 
+  mp = hp.alm2map(alm_sel, nside=hp.get_nside(m), lmax=lmax, verbose=False)
+2025-10-24 14:13:26,749 | INFO | ct_cmb_validation | Stage lmax=128, rad=25.0 deg: best p=0.0921
+2025-10-24 14:13:26,750 | INFO | ct_cmb_validation | Saved patch-scan results to results/runs/20251024_133237_pt1_patch_scan/final_results.json

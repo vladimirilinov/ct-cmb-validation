@@ -1,0 +1,57 @@
+2025-10-24 11:46:53,115 | WARNING | matplotlib | /Users/vladimir/.matplotlib is not a writable directory
+2025-10-24 11:46:53,116 | WARNING | matplotlib | Matplotlib created a temporary cache directory at /var/folders/f0/nbbpk4gd29ncn7gqyc0fhy5h0000gn/T/matplotlib-lg356tdw because there was an issue with the default path (/Users/vladimir/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+2025-10-24 11:46:53.221 system_profiler[51729:1872890] XType: Using static font registry.
+2025-10-24 11:46:58,157 | WARNING | matplotlib.font_manager | Matplotlib is building the font cache; this may take a moment.
+2025-10-24 11:47:02,608 | INFO | matplotlib.font_manager | Failed to extract font properties from /System/Library/Fonts/LastResort.otf: tuple indices must be integers or slices, not str
+2025-10-24 11:47:02,616 | INFO | matplotlib.font_manager | Failed to extract font properties from /System/Library/Fonts/Apple Color Emoji.ttc: Could not set the fontsize (invalid pixel size; error code 0x17)
+2025-10-24 11:47:02,654 | INFO | matplotlib.font_manager | Failed to extract font properties from /System/Library/Fonts/Supplemental/NISC18030.ttf: Could not set the fontsize (invalid pixel size; error code 0x17)
+2025-10-24 11:47:02,677 | INFO | matplotlib.font_manager | generated new fontManager
+2025-10-24 11:47:02,868 | INFO | ct_cmb_validation | Loading map from data/raw/planck/COM_CMB_IQU-smica_2048_R3.00_full.fits
+/Users/vladimir/Downloads/ct-cmb-validation/scripts/02b_build_d6_bispectrum_template.py:115: HealpyDeprecationWarning: "verbose" was deprecated in version 1.15.0 and will be removed in a future version. 
+  m = hp.read_map(map_path, field=0, dtype=float, verbose=False)
+2025-10-24 11:47:04,637 | INFO | ct_cmb_validation | Computing Cl up to lmax=128
+2025-10-24 11:47:04,669 | INFO | ct_cmb_validation | Loading mask from data/raw/masks/COM_Mask_CMB-common-Mask-Int_2048_R3.00 (1).fits
+/Users/vladimir/Downloads/ct-cmb-validation/scripts/02b_build_d6_bispectrum_template.py:127: HealpyDeprecationWarning: "verbose" was deprecated in version 1.15.0 and will be removed in a future version. 
+  mask = hp.read_map(mask_path, dtype=float, verbose=False)
+2025-10-24 11:47:06,389 | INFO | ct_cmb_validation | Computing impedance map (epsilon=0.02, wp=1, ws=1)
+2025-10-24 11:47:06,426 | INFO | ct_cmb_validation | Binning configured: 8 bins (width=16)
+/Users/vladimir/Downloads/ct-cmb-validation/scripts/02b_build_d6_bispectrum_template.py:191: HealpyDeprecationWarning: "verbose" was deprecated in version 1.15.0 and will be removed in a future version. 
+  alm_g = hp.synalm(cl, lmax=lmax, new=True, verbose=False)
+/Users/vladimir/Downloads/ct-cmb-validation/scripts/02b_build_d6_bispectrum_template.py:201: HealpyDeprecationWarning: "verbose" was deprecated in version 1.15.0 and will be removed in a future version. 
+  mZ = hp.alm2map(alm_mod, nside=nside_map, lmax=lmax, verbose=False)
+/Users/vladimir/Downloads/ct-cmb-validation/scripts/02b_build_d6_bispectrum_template.py:82: HealpyDeprecationWarning: "verbose" was deprecated in version 1.15.0 and will be removed in a future version. 
+  mf = hp.alm2map(alm_f, nside=nside_map, lmax=lmax, verbose=False)
+2025-10-24 11:47:47,102 | INFO | ct_cmb_validation | MC progress: 1/16 (6.2%), chunk=1, elapsed=40.7s, ETA=610.1s
+2025-10-24 11:47:47,115 | INFO | ct_cmb_validation | Checkpoint saved at n=1 (chunk 40.69s)
+2025-10-24 11:48:27,637 | INFO | ct_cmb_validation | MC progress: 2/16 (12.5%), chunk=1, elapsed=81.2s, ETA=568.5s
+2025-10-24 11:48:27,641 | INFO | ct_cmb_validation | Checkpoint saved at n=2 (chunk 40.53s)
+2025-10-24 11:49:07,874 | INFO | ct_cmb_validation | MC progress: 3/16 (18.8%), chunk=1, elapsed=121.4s, ETA=526.3s
+2025-10-24 11:49:07,877 | INFO | ct_cmb_validation | Checkpoint saved at n=3 (chunk 40.24s)
+2025-10-24 11:49:48,206 | INFO | ct_cmb_validation | MC progress: 4/16 (25.0%), chunk=1, elapsed=161.8s, ETA=485.3s
+2025-10-24 11:49:48,209 | INFO | ct_cmb_validation | Checkpoint saved at n=4 (chunk 40.33s)
+2025-10-24 11:50:28,396 | INFO | ct_cmb_validation | MC progress: 5/16 (31.2%), chunk=1, elapsed=202.0s, ETA=444.3s
+2025-10-24 11:50:28,399 | INFO | ct_cmb_validation | Checkpoint saved at n=5 (chunk 40.19s)
+2025-10-24 11:51:08,691 | INFO | ct_cmb_validation | MC progress: 6/16 (37.5%), chunk=1, elapsed=242.3s, ETA=403.8s
+2025-10-24 11:51:08,694 | INFO | ct_cmb_validation | Checkpoint saved at n=6 (chunk 40.29s)
+2025-10-24 11:51:48,914 | INFO | ct_cmb_validation | MC progress: 7/16 (43.8%), chunk=1, elapsed=282.5s, ETA=363.2s
+2025-10-24 11:51:48,918 | INFO | ct_cmb_validation | Checkpoint saved at n=7 (chunk 40.22s)
+2025-10-24 11:52:28,930 | INFO | ct_cmb_validation | MC progress: 8/16 (50.0%), chunk=1, elapsed=322.5s, ETA=322.5s
+2025-10-24 11:52:28,933 | INFO | ct_cmb_validation | Checkpoint saved at n=8 (chunk 40.01s)
+2025-10-24 11:53:09,182 | INFO | ct_cmb_validation | MC progress: 9/16 (56.2%), chunk=1, elapsed=362.8s, ETA=282.1s
+2025-10-24 11:53:09,185 | INFO | ct_cmb_validation | Checkpoint saved at n=9 (chunk 40.25s)
+2025-10-24 11:53:49,360 | INFO | ct_cmb_validation | MC progress: 10/16 (62.5%), chunk=1, elapsed=402.9s, ETA=241.8s
+2025-10-24 11:53:49,363 | INFO | ct_cmb_validation | Checkpoint saved at n=10 (chunk 40.18s)
+2025-10-24 11:54:28,914 | INFO | ct_cmb_validation | MC progress: 11/16 (68.8%), chunk=1, elapsed=442.5s, ETA=201.1s
+2025-10-24 11:54:28,918 | INFO | ct_cmb_validation | Checkpoint saved at n=11 (chunk 39.56s)
+2025-10-24 11:55:08,543 | INFO | ct_cmb_validation | MC progress: 12/16 (75.0%), chunk=1, elapsed=482.1s, ETA=160.7s
+2025-10-24 11:55:08,546 | INFO | ct_cmb_validation | Checkpoint saved at n=12 (chunk 39.63s)
+2025-10-24 11:55:48,025 | INFO | ct_cmb_validation | MC progress: 13/16 (81.2%), chunk=1, elapsed=521.6s, ETA=120.4s
+2025-10-24 11:55:48,029 | INFO | ct_cmb_validation | Checkpoint saved at n=13 (chunk 39.48s)
+2025-10-24 11:56:27,680 | INFO | ct_cmb_validation | MC progress: 14/16 (87.5%), chunk=1, elapsed=561.3s, ETA=80.2s
+2025-10-24 11:56:27,683 | INFO | ct_cmb_validation | Checkpoint saved at n=14 (chunk 39.65s)
+2025-10-24 11:57:07,154 | INFO | ct_cmb_validation | MC progress: 15/16 (93.8%), chunk=1, elapsed=600.7s, ETA=40.0s
+2025-10-24 11:57:07,157 | INFO | ct_cmb_validation | Checkpoint saved at n=15 (chunk 39.47s)
+2025-10-24 11:57:47,126 | INFO | ct_cmb_validation | MC progress: 16/16 (100.0%), chunk=1, elapsed=640.7s, ETA=0.0s
+2025-10-24 11:57:47,130 | INFO | ct_cmb_validation | Checkpoint saved at n=16 (chunk 39.97s)
+2025-10-24 11:57:47,132 | INFO | ct_cmb_validation | Wrote D6 template to results/runs/20251024_114652_pt1_d6_template/d6_bispectrum_template.fits
+2025-10-24 11:57:47,133 | INFO | ct_cmb_validation | Copied D6 template FITS to data/processed/d6_bispectrum_template.fits
