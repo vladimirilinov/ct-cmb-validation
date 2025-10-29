@@ -1,0 +1,15 @@
+{
+  "out_fits": "results/runs/20251024_093858_cmbbest_reconstruct/cmbbest_bispectrum.fits",
+  "meta": {
+    "BASIS": "legendre/base/TP",
+    "F_SKY": 0.77941,
+    "A_SCALAR": 2.100549e-09,
+    "N_SCALAR": 0.9649,
+    "K_PIVOT": 0.05,
+    "MODE_KMIN": 0.000208759,
+    "MODE_KMAX": 0.208759,
+    "ORTHOG": false,
+    "NORMAL": false,
+    "QDIR": "tetrapyd/uniform"
+  }
+}

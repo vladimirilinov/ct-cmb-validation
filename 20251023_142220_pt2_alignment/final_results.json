@@ -1,0 +1,1 @@
+{"status": "FAILED", "reason": "healpy not installed or alm load failed", "detail": "Failed to get Planck alm from data/raw/planck/COM_CMB_IQU-smica_2048_R3.00_full.fits. Ensure healpy is installed. Error: No module named 'healpy'"}

@@ -1,0 +1,14 @@
+{
+  "map_path": "data/raw/planck/COM_CMB_IQU-smica_2048_R3.00_full.fits",
+  "mask_path": "data/raw/masks/COM_Mask_CMB-common-Mask-Int_2048_R3.00 (1).fits",
+  "f_sky": 0.7849413553873698,
+  "lmax": 512,
+  "bin_width": 16,
+  "nside": 256,
+  "N_mc": 120,
+  "epsilon": 0.02,
+  "wp": 1.0,
+  "ws": 1.0,
+  "CT_WORKERS": 10,
+  "CT_PT1_GAUNT": 0
+}

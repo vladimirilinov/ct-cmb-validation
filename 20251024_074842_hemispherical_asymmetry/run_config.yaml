@@ -1,0 +1,30 @@
+# Main configuration for ct-cmb-validation
+
+paths:
+  planck_alm_fits: data/raw/planck/COM_CMB_IQU-smica_2048_R3.00_full.fits
+  planck_bispectrum_fits: data/raw/planck/COM_Bispectrum_I_2048_R3.00.fits
+  planck_h0_cosmic_json: data/raw/planck/planck_h0_cosmic.json
+  h0_local_json: data/raw/local_universe/h0_local.json
+  ct_params_json: data/raw/ct_params/t_d6_parameters.json
+  results_root: results/runs
+
+pt2_alignment:
+  N_mc_iso: 1000
+  N_mc_d6: 200
+  lmax: 64
+  nside_preview: 64
+
+pt1_bispectrum:
+  N_mc: 200
+  basis_template: equilateral  # or: local, orthogonal
+
+ph2_hubble:
+  report_precision: 4
+
+qc_link:
+  tolerance_fraction: 0.1
+
+logging:
+  level: INFO
+  fmt: "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+
