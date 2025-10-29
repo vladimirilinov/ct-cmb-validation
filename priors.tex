@@ -1,0 +1,257 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PHILOSOPHICAL FOUNDATIONS – COHERENCE THEORY (UNIFIED PAPER)
+% File: priors.tex (OPTIMIZED VERSION)
+% Coherence-budget optimized: reduced leakage, complexity, and throughput
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Foundations of Coherence}
+\label{sec:philosophical-foundations}
+
+\subsection{Primitive Ontology: Contact Graph, Pokes, Coherence}
+\label{subsec:contact-graph}
+
+\paragraph{Contact graph primitives.}
+Patterns inhabit a locally finite contact graph $G=(V,E)$ where each pattern $A$ occupies finite support $\mathrm{supp}(A)\subset V$. All influences (pokes) have bounded reach: finite graph distance from origin.
+
+\paragraph{Coherence and Budget (Informal Definitions).}
+To avoid circularity, we define Coherence and Budget as independent measures before introducing the selection principle.
+\begin{itemize}[noitemsep]
+    \item \textbf{Coherence (CL)} is the intrinsic robustness of a pattern. It measures how well the pattern preserves its defining regularities against the worst-case pokes from its neighborhood, \emph{independent of} implementation costs. It answers: ``How tough is this pattern?''
+    \item \textbf{Budget (B)} is the implementation cost of the pattern. It measures the resources required to exist, accounted for across the multi-dimensional budget space. It answers: ``How expensive is this pattern?''
+\end{itemize}
+Formal definitions (resilience profiles, gauges, realized cones) appear in \cref{app:profiles}.
+
+\subsection{Metaphysical Priors}
+\label{subsec:priors}
+
+\noindent
+Each prior follows the structure: \textbf{Plain} statement → \textbf{Kernel} (formal) → \textbf{Falsifier} (how to disprove).
+
+\begin{description}[leftmargin=2.2cm,style=nextline]
+
+\item[\textbf{P1 (Patterns exist).}]
+\label{prior:P1}\label{prior:patterns-exist}\label{prior:A1}
+
+\textbf{Plain:} Patterns are re-identifiable regularities. Some are highly stable (the sun rises daily); others vary (seasons shift). The existence of any re-identifiable regularity is fundamental.
+
+\textbf{Kernel:} There necessarily exists a class $\mathcal{P}$ of re-identifiable regularities.
+
+\textbf{Falsifier:} No regularity exists that can be re-identified by multiple observers or across multiple observations.
+
+\item[\textbf{P2 (Patterns cannot exist in isolation).}]
+\label{prior:P2}\label{prior:relational-existence}\label{prior:A3}
+
+\textbf{Plain:} Stable regularities can only be identified in relation to other stable regularities. An orbit requires a central body; a rhythm requires a reference beat; a pattern requires neighbors. This relational structure forms a \emph{contact graph} $G$: a web of patterns where each node is a pattern and edges represent direct interaction.
+
+\textbf{Kernel:} For every $P \in \mathcal{P}$ there necessarily exists a neighborhood of patterns $N(P)$ on a contact graph $G$.
+
+\textbf{Falsifier:} A stable regularity can be identified without any reference to another stable regularity.
+
+\item[\textbf{P3 (Patterns can only interact with direct contacts).}]
+\label{prior:P3}\label{prior:local-interaction}\label{prior:A4}
+
+\textbf{Plain:} Patterns cannot directly interact with patterns they are not immediately connected to on their contact graph. All interactions (pokes) \emph{must} be immediate and local to $G$. An email cannot poke an orca. But an email can poke an inbox, the inbox can poke its human user, and if the human is within arm's reach of an orca, only then can the orca be poked.
+
+\textbf{Kernel:} For every $P$ at neighborhood $N(P)$, pokes come only from directly connected patterns on contact graph $G$.
+
+\textbf{Falsifier:} A pattern can immediately and directly interact with another pattern it has no direct relationship with.
+
+\item[\textbf{P4 (All pattern interactions must have a price).}]
+\label{prior:P4}\label{prior:cost}\label{prior:A6}
+
+\textbf{Plain:} Interaction necessarily implies exchange. No exchange, no interaction. Thus, for any observable pattern interaction, there must be an exchange of \emph{some} resources.
+
+\textbf{Kernel:} There exists a space of budgets $B$ that a pattern $P$ must spend when poked across $G$.
+
+\textbf{Falsifier:} There exists a class of pattern interaction with zero resource exchange.
+
+\item[\textbf{P5 (There is more than one independent price).}]
+\label{prior:P5}\label{prior:multidimensional-budgets}\label{prior:A8}
+
+\textbf{Plain:} If there were only one type of cost, every challenge a pattern faced would be interchangeable. But we observe that patterns face fundamentally different kinds of trade-offs. An iron hammer can withstand a hard hit on stone, but it will rust and become brittle if left out in the rain. Because these trade-offs are independent, the ``price'' of persistence must be measured in a multi-dimensional budget space.
+
+\textbf{Kernel:} The budget space $B$ has a dimension greater than 1.
+
+\textbf{Falsifier:} All pattern-survival trade-offs can be reduced to a single scalar cost.
+
+\item[\textbf{P6 (Every pattern has pokes it cannot afford to survive).}]
+\label{prior:P6}\label{prior:finite-budgets}\label{prior:A7}
+
+\textbf{Plain:} No observed pattern can withstand all pokes or pay for all interactions. When a pattern cannot pay the price of an interaction, it loses its regularities and ceases to be the same pattern. No regularity is eternal.
+
+\textbf{Kernel:} For all patterns $P$, there exists an ensemble of pokes that exceeds their budget $B$.
+
+\textbf{Falsifier:} There exists a pattern that can afford all possible interactions with all possible patterns without any of its regularities changing.
+
+\item[\textbf{P7 (No pattern is perfect).}]
+\label{prior:P7}\label{prior:irreducible-openness}\label{prior:A9}
+
+\textbf{Plain:} Every pattern we observe has an inherent ``floor'' of fuzziness and unpredictability. The smoothest surface we can find looks jagged and random under a microscope. Thus, there exists a fundamental floor of noise / uncertainty that no observable pattern can cross.
+
+\textbf{Kernel:} At any nontrivial lens, there exist disturbance directions not captured by a pattern's current essentials.
+
+\textbf{Falsifier:} There exists a pattern whose deviation from its defining regularities remains \emph{exactly zero} under all admissible pokes for an arbitrarily long time.
+
+\item[\textbf{P8 (Observation is a pattern).}]
+\label{prior:P8}\label{prior:observation-is-pattern}\label{prior:A10}
+
+\textbf{Plain:} The very act of observing is itself a pattern. The set of rules and procedures we use to identify another pattern---what we might call a ``lens''---is a pattern in its own right. As such, it must pay budgets to maintain its own coherence. Lenses that are too expensive, too fragile, or fail to produce stable results are themselves deselected over time.
+
+\textbf{Kernel:} An observation procedure (a lens) is a pattern $P$, subject to $\Sel(P) \ge 0$.
+
+\textbf{Falsifier:} There exists a costless, universal lens that can identify all patterns without being subject to decoherence or budget constraints.
+
+\item[\textbf{P9 (Patterns compete for existence).}]
+\label{prior:P9}\label{prior:competition}\label{prior:A5}
+
+\textbf{Plain:} Since every pattern has limited budgets and faces disruptive pokes from its neighbors, there is an inherent competition for persistence. This is a statistical inevitability. Across many iterations, the patterns that survive are either more robust, more efficient, or both.
+
+\textbf{Kernel:} Patterns are subject to selection pressure based on their ability to persist under budgeted interactions.
+
+\textbf{Falsifier:} Pattern prevalence is independent of their coherence-to-cost ratio.
+
+\item[\textbf{P10 (Adaptation is key to survival).}]
+\label{prior:P10}\label{prior:adaptation}\label{prior:A11}
+
+\textbf{Plain:} No pattern nor neighborhood is ever static. No relative composition of regularities or budgets can buffer against all possible pokes. As failed patterns disappear and new patterns form from their remains, the patterns of a neighborhood must adapt to new pokes. Stars become supernovas, ecologies collapse, and political leaders die. The patterns that survive this constant change are those with capacity to adapt---to optimize their budgets and modify their regularities.
+
+\textbf{Kernel:} Over multiple selection windows, the population of surviving patterns evolves toward configurations with higher average selection scores.
+
+\textbf{Falsifier:} A static, suboptimal pattern can be shown to persist indefinitely in a competitive environment where more efficient configurations are possible.
+
+\end{description}
+
+\begin{remark}[Former A2 removed]
+Former axiom A2 (``Some patterns persist'') is now emergent: if $\exists A$ with $\mathrm{Sel}(A) \geq 0$, persistence follows.
+\end{remark}
+
+\begin{remark}[Clocks and time]
+Coherence Theory has no global time. A ``tick'' is simply a repeatable reference poke. Two patterns serve as clocks for each other if their tick ratio stabilizes (mutual synchronization). This is provisional and local---no universal clock is presupposed.
+\end{remark}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LOGICAL DERIVATION CHAIN - LONGTABLE (WITH FIXED SPACING)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Logical Derivation Chain: From Priors to Physics}
+\label{subsec:derivation-chain-summary}
+
+\noindent
+The complete argument from metaphysical priors to quantitative predictions.
+Each row states a logical step; the right column provides proof references.
+
+\vspace{1em}
+
+% Increase row height globally for this table
+{\renewcommand{\arraystretch}{1.4}
+\begin{longtable}{p{10cm} p{4.5cm}}
+\hline \hline
+\textbf{Logical Step} & \textbf{Proof References} \\
+\hline
+\endhead
+
+\multicolumn{2}{l}{\textit{\textbf{Part I: Foundation — The Selection Law}}} \\
+\hline
+Reality is patterns $P$ on a contact graph $G$ with local pokes & Priors \cref{prior:P1,prior:P2,prior:P3} \\
+
+Pattern interactions require multi-dimensional budgets $\mathbf{B}$ & Priors \cref{prior:P4,prior:P5} \\
+
+Competition is unavoidable under finite budgets & Priors \cref{prior:P6,prior:P7,prior:P9,prior:P10} \\
+
+Selection law: $\mathrm{Sel}(A) = \mathrm{CL}(A) - \langle\Lambda, \mathbf{B}(A)\rangle \geq 0$ (necessary condition) & \cref{thm:selection-ineq-main-text} \\
+
+Universal prices $\Lambda$ exist uniquely at SEP (from concavity + KKT) & \cref{thm:sep,lem:profile-convexity} \\
+\hline
+
+\multicolumn{2}{c}{\rule{0pt}{3ex}} \\
+
+\multicolumn{2}{l}{\textit{\textbf{Part II: Three Budget Dimensions}}} \\
+\hline
+Hodge decomposition: all flows split into gradient + curl + harmonic & Mathematical fact (used in \cref{thm:three-budgets-graph}) \\
+
+Physical mapping: $\mathbf{B} = (B_{\mathrm{th}}, B_{\mathrm{cx}}, B_{\mathrm{leak}})$ exactly & \cref{thm:three-budgets-graph,prop:moreau,thm:pointer,lem:dirichlet-lb} \\
+\hline
+
+\multicolumn{2}{c}{\rule{0pt}{3ex}} \\
+
+\multicolumn{2}{l}{\textit{\textbf{Part III: Quantum Mechanics — Fast Sector}}} \\
+\hline
+Irreducible openness (\cref{prior:P7}) $\Rightarrow$ No perfect distinguishability (NPD) & \cref{thm:A9-NPD,prop:A9-equivalence} \\
+
+NPD $\Rightarrow$ Non-commutative algebra required & \cref{cor:non-boolean} \\
+
+HSD cone at SEP $\Rightarrow$ Complex Hermitian PSD matrices $H_n(\mathbb{C})_+$ & \cref{thm:hsd-main,cor:eja,thm:hsd-cone-complex} \\
+
+Quantum mechanics emerges with $\hbar = \lambda_{\mathrm{th}}^{-1}$ & \cref{thm:wave-particle-duality,thm:gksl-main} \\
+\hline
+
+\multicolumn{2}{c}{\rule{0pt}{3ex}} \\
+
+\multicolumn{2}{l}{\textit{\textbf{Part IV: Spacetime and Gravity — Slow Sector}}} \\
+\hline
+Graph optimization $\Rightarrow$ Emergent manifold (space) & \cref{prop:quasi-local} \\
+
+Finite $B_{\mathrm{th}}$ $\Rightarrow$ Universal speed limit $\Rightarrow$ Lorentzian signature $(-, +, +, +)$ & \cref{lem:lr,cor:lorentz} \\
+
+Order selection: $k=2$ hyperbolic (single cone, finite speed) & \cref{prop:k-order,prop:parabolic} \\
+
+Dimensional optimality: $d=3$ spatial dimensions minimize total budget & \cref{lem:routing-boundary} \\
+
+Geometric optimization $\Rightarrow$ Einstein equations with $G^{-1} = \lambda_{\mathrm{th}}^{(\text{slow})}$, $\Lambda = \lambda_{\mathrm{leak}}^{(\text{slow})}$ & \cref{thm:EH-gamma,lem:garding,lem:gauge-repair} \\
+\hline
+
+\multicolumn{2}{c}{\rule{0pt}{3ex}} \\
+
+\multicolumn{2}{l}{\textit{\textbf{Part V: The Standard Model — Gauge Sector}}} \\
+\hline
+Budget-symmetry map: three budgets $\Rightarrow$ $SU(3) \times SU(2) \times U(1)$ & \cref{thm:gauge-groups-main} \\
+
+Irreducible openness $\Rightarrow$ Chiral matter required & \cref{thm:chiral-selection} \\
+
+CP violation + minimal complexity $\Rightarrow$ $N_g = 3$ generations & \cref{thm:three-gen} \\
+
+Leakage minimization $\Rightarrow$ EWSB via scalar condensate & \cref{thm:ewsb-main} \\
+
+Pointer alignment $\Rightarrow$ Yukawa hierarchy $Y_{ij} = Y_0 \exp(-\eta_* d_{ij})$ & \cref{prop:yukawa-derivation,thm:pointer} \\
+\hline
+
+\multicolumn{2}{c}{\rule{0pt}{3ex}} \\
+
+\multicolumn{2}{l}{\textit{\textbf{Part VI: Cosmology — Dark Sector}}} \\
+\hline
+Coherence phase transition $\Rightarrow$ Big Bang + Inflation & \cref{prop:bounce-cascade} \\
+
+$H(t) = \frac{1}{3}\frac{\dot{B}_{\mathrm{th}}}{B_{\mathrm{th}}}$ (expansion from throughput) & \cref{thm:metric-expansion-throughput} \\
+
+Subcoherent scaffolds $\Rightarrow$ Dark matter (gravitationally active, EM-dim) & Section~\ref{sec:dark-matter} \\
+
+Residual leakage $\Rightarrow$ Dark energy ($\Lambda_{\mathrm{cosmo}} = \lambda_{\mathrm{leak}}^{(\text{slow})}$) & \cref{thm:lambda-cosmo} \\
+\hline
+
+\multicolumn{2}{c}{\rule{0pt}{3ex}} \\
+
+\multicolumn{2}{l}{\textit{\textbf{Part VII: Computational Validation}}} \\
+\hline
+Canonical 13-node tile $T_{\mathrm{D6}}$ realizes entire framework (zero free parameters) & \cref{def:canonical-tile} \\
+
+Predictions: PMNS $\theta_{13}$ to $0.48\sigma$, gauge unification at $10^{16}$ GeV, CMB $A_s$ to percent-level & \cref{sec:quantitative-predictions} \\
+
+Quantum-cosmic link: same $\eta_* = 2.0$ governs quark masses and CMB amplitude & \cref{thm:quantum-cosmic-amplitude} \\
+\hline \hline
+
+\multicolumn{2}{c}{\rule{0pt}{2ex}} \\
+
+\multicolumn{2}{l}{\textbf{Final Thesis:}} \\
+\multicolumn{2}{p{14.5cm}}{Physics is the unique solution to: \textbf{Maximize coherence under finite, multidimensional budgets.} Laws of nature are stationary exchange rates; constants ($\hbar$, $G$, $\Lambda$, couplings) are equilibrium prices; the cosmos records which patterns can afford existence.} \\
+\hline \hline
+\end{longtable}
+}% End of arraystretch scope
+
+\begin{remark}[Using this table]
+This table provides a scannable overview of the complete logical chain. Each row is a logical step that builds on prior rows. The right column points to detailed proofs in the Appendix. For the full argument with intermediate steps, see the expanded derivation chain in the online supplement.
+\end{remark}
+
+\subsection{Methodological Guardrails}
+\label{subsec:guardrails}
+
+We derive all structure from priors P1-P10 without assuming Hilbert spaces, $C^*$-algebras, or metric geometry. Operator algebras emerge via the homogeneous self-dual cone → Euclidean Jordan algebra → universal $C^*$ envelope (Appendix Theorems 3.HSD, 3.EJA). Budgets are proved convex, lower semicontinuous, data-processing monotone, and additive from block mixing and tiling (Appendix). Clocks are local and provisional; there is no global time.

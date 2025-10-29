@@ -1,0 +1,19 @@
+name: ct-cmb-validation
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - healpy
+  - astropy
+  - pyyaml
+  - matplotlib
+  - tqdm
+  - pytest
+  - ipykernel
+  - pip
+  - pip:
+      - pywigxjpf  # optional: robust Wigner-D/3j backend
+

@@ -1,0 +1,17 @@
+# Core numerical
+numpy
+scipy
+
+# Astrophysics & Cosmology
+healpy      # HEALPix library for alm and map manipulation
+astropy     # For reading FITS files
+
+# Optional: Wigner-D matrices (if scipy is insufficient)
+# wigxjpf   # Or similar robust library
+
+# Utilities
+pyyaml      # For config files
+matplotlib  # For plots
+tqdm        # For progress bars in MC loops
+pytest      # For unit tests
+
